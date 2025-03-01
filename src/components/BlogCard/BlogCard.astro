@@ -1,0 +1,14 @@
+---
+import styles from './blog-card.module.css';
+
+const { url, title, image } = Astro.props;
+---
+
+<a href={url} class={styles.link}>
+  <article class={styles.container}>
+    <div class={styles['image-container']}>
+      <img class={styles.image} alt={image.alt} src={image.url} />
+    </div>
+    <h2 class={styles.heading}>{title}</h2>
+  </article>
+</a>
