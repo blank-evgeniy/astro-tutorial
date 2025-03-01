@@ -9,9 +9,9 @@ const { posts } = Astro.props;
     posts.map((post: any) => (
       <li>
         <BlogCard
-          url={post.url}
-          title={post.frontmatter.title}
-          image={post.frontmatter.image}
+          url={`/posts/${post.id}/`}
+          title={post.data.title}
+          image={post.data.image}
         />
       </li>
     ))
