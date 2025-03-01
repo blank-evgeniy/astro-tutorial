@@ -1,0 +1,13 @@
+---
+import Hamburger from '../Hamburger/Hamburger.astro';
+import styles from './navigation.module.css';
+---
+
+<nav>
+  <Hamburger />
+  <div data-element="nav-links" class={styles['nav-links']}>
+    <a class={styles['nav-link']} href="/">Home</a>
+    <a class={styles['nav-link']} href="/about/">About</a>
+    <a class={styles['nav-link']} href="/blog/">Blog</a>
+  </div>
+</nav>
